@@ -103,12 +103,35 @@ ul{
 .error-container {
     color: red;
     font-weight: bold;
-  }
+}
   
-  .error-container * {
+.error-container * {
     display: inline-block;
-  }
+}
   
-  #cancel-error {
+#cancel-error {
     margin-right: 0.5rem;
-  }
+}
+
+@media screen and (min-width: 1200px) {
+    header{
+        text-align: center;
+    }
+
+    section{
+        /* width: 80%; */
+        
+    }
+
+    .newBookmark{
+        width: 30%;
+    }
+    
+    select{
+        width: 20%;
+    }
+
+    .bookmarksList{
+        /* width: 80%; */
+    }
+}

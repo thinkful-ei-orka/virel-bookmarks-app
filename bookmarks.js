@@ -156,6 +156,7 @@ function handleNewItemSubmit(){
         $('textarea').val("");
         api.createItem(newItemTitle,newItemUrl,newItemDescription,newItemRating)
             .then((newItem) => {
+                newItem.expanded = false;
                 store.addItem(newItem);
                 console.log(newItem);
                 console.log(store.items);
